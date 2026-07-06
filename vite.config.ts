@@ -16,6 +16,9 @@ export default defineConfig({
     port: 8080,
     strictPort: true,
   },
+  preview: {
+    allowedHosts: ["sota-luxury-hair.onrender.com"],
+  },
   resolve: {
     dedupe: ["react", "react-dom", "react-router-dom"],
   },
