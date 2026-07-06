@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: sota-luxury-hair
+    env: node
+    nodeVersion: 22.x
+    buildCommand: npm install && npm run build
+    startCommand: node dist/server/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: "10000"
