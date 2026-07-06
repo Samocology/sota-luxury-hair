@@ -2,5 +2,14 @@
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
   "framework": null,
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "functions": {
+    "dist/server/server.js": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/dist/server/server" }
+  ]
 }
