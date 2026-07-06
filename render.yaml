@@ -4,7 +4,7 @@ services:
     env: node
     nodeVersion: 22.x
     buildCommand: npm install && npm run build
-    startCommand: node dist/server/server.js
+    startCommand: HOST=0.0.0.0 PORT=10000 node dist/server/server.js
     envVars:
       - key: NODE_ENV
         value: production
